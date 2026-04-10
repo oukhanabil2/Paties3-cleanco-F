@@ -17,6 +17,58 @@
     --text-bronze: #cd7f32;
 }
 
+/* En-tête avec logo */
+.app-header {
+    background-color: var(--header-blue);
+    color: #ffffff;
+    padding: 15px 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.header-logo .logo-img {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.header-title h1 {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header-title #sub-title {
+    font-size: 0.85em;
+    margin: 5px 0 0;
+    color: #ecf0f1;
+}
+
+/* Pied de page */
+.app-footer {
+    background-color: #1a252f;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.8em;
+    border-top: 1px solid #34495e;
+    margin-top: auto;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
